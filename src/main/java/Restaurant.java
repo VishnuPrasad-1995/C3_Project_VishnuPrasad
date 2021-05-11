@@ -72,7 +72,19 @@ public class Restaurant {
 
     public int orderValue(List<String> selectedItems) {
 
-        return 0;
+        int total = 0;
+        if (selectedItems.isEmpty()){
+            return total;
+        }
+        else {
+            for(String I : selectedItems){
+                for (Item item : menu) {
+                    if (item.getName().equals(I))
+                        total = total + item.getPrice();
+                }
+            }
+            return total;
+        }
 
     }
 
