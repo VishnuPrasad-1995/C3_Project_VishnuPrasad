@@ -8,7 +8,7 @@ public class RestaurantService {
     public Restaurant findRestaurantByName(String restaurantName){
         for(Restaurant r : restaurants) {
             if (r.getName().equals(restaurantName)) {
-                return r;
+                    return r;
             }
 
         }
@@ -35,4 +35,5 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+
 }

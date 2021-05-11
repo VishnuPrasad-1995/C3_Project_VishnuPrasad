@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -9,6 +10,8 @@ public class Restaurant {
     public LocalTime openingTime;
     public LocalTime closingTime;
     private List<Item> menu = new ArrayList<Item>();
+    private Integer totalvalue = 0;
+    private Boolean flag = false;
 
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
@@ -64,6 +67,15 @@ public class Restaurant {
                 +"Menu:"+"\n"+getMenu());
 
     }
+
+
+
+    public int orderValue(List<String> selectedItems) {
+
+        return 0;
+
+    }
+
 
     public String getName() {
         return name;
